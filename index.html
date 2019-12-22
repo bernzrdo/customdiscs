@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>MCGenerator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="zip.js"></script>
+        <script src="save.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="logo"></div>
+        <div id="content">
+            
+            <input id="name" placeholder="Resource pack name" autocomplete="off" spellcheck="false" autofocus>
+            
+            <h1>1. Select <b>12</b> OGG files!</h1>
+            <span class="gray">If you need to convert your audio files to OGG, <a href="https://audio.online-convert.com/convert-to-ogg" target="_blank" class="gray">click here</a>.</span><br>
+            <button id="upload">Select OGG files</button> <span id="count">0/12</span>
+            <input type="file" accept=".ogg" multiple>
+            
+            <h1>2. Select the Minecraft version</h1>
+            <button id="version">1.15</button>
+            
+            <h1>3. Download resource pack</h1>
+            <button id="download" disabled>Download resource pack</button> <span id="progress"></span>
+            
+            <h1>4. Install the resource pack</h1>
+            <span class="gray">If you don't know how to install a resource pack, <a href="https://minecraft.gamepedia.com/Tutorials/Loading_a_resource_pack#Direct_methods" target="_blank" class="gray">visit this page</a>.</span>
+            
+        </div>
+    </body>
+</html>

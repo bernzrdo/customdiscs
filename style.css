@@ -1,0 +1,120 @@
+
+/* Font */
+
+@font-face {
+    font-family: 'Minecraft';
+    src: local('Minecraft Regular'), local('Minecraft'), url('assets/Minecraft.woff2') format('woff2'), url('assets/Minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main */
+
+body {
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(assets/dirt.png);
+    background-size: 100px;
+    image-rendering: pixelated;
+    animation: bg 5s linear infinite;
+    color: #fff;
+}
+
+@keyframes bg {
+    from {background-position: 0 0;}
+    to   {background-position: 100px 100px;}
+}
+
+* {
+    font-weight: normal;
+    font-family: 'Minecraft';
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+button {
+    color: #fff;
+    text-shadow: 2px 2px #3f3f3f;
+    height: 40px;
+    width: 400px;
+    background-image: url(assets/button.png);
+    background-size: cover;
+    background-position: 0 -40px;
+    border: 0;
+    font-size: 1em;
+    margin: 15px 0;
+}
+
+button:hover {
+    background-position: 0 -80px;
+    color: #ff5;
+    text-shadow: 2px 2px #3f3f15;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-position: 0 0;
+    color: #aaa;
+    text-shadow: 3px 3px #2a2a2a;
+    cursor: not-allowed;
+}
+
+.gray {
+    color: #aaa;
+    text-shadow: 3px 3px #2a2a2a;
+}
+
+.green {
+    color: #5f5;
+    text-shadow: 3px 3px #153f15;
+}
+
+.red {
+    color: #f55;
+    text-shadow: 3px 3px #3f1515;
+}
+
+input[type=file] {
+    display: none;
+}
+
+#logo {
+    height: 150px;
+    margin: 15px;
+    width: calc(100% - 30px);
+    background-image: url('assets/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content {
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#name {
+    font-size: 2em;
+    background: 0;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px #3f3f3f;
+}
+
+#name::placeholder {
+    color: #555;
+    text-shadow: 3px 3px #151515;
+}
